@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #12121c);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.counter-sec {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.counter-sec h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00d9ff;
+    letter-spacing: 1px;
+}
+.container#count {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00d9ff, #00ffa1);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+.button_box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button.btn {
+    background-color: #00d9ff;
+    color: #1e1e2f;
+}
+
+button.subtraction {
+    background-color: #ff4e4e;
+    color: #ffffff;
+}
+
+button.Reset {
+    background-color: #ffd500;
+    color: #1e1e2f;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+@media (max-width: 500px) {
+    .counter-sec {
+        padding: 30px 20px;
+    }
+
+    .counter-sec h1 {
+        font-size: 26px;
+    }
+
+    .container#count {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
